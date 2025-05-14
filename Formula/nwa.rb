@@ -5,21 +5,21 @@
 class Nwa < Formula
   desc "NWA - A More Powerful License Header Management Tool"
   homepage "https://github.com/B1NARY-GR0UP/nwa"
-  version "0.7.0"
+  version "0.7.1"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.0/nwa_Darwin_x86_64.tar.gz"
-      sha256 "951dcd81d2d6edeb602f13f40c04fd34a845b102643f300e66ef692be25870c9"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.1/nwa_Darwin_x86_64.tar.gz"
+      sha256 "ec00f32693ae43ebc83d5076c94fbdaeb25b279d98a5eb06342c4635f7bec383"
 
       def install
         bin.install "nwa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.0/nwa_Darwin_arm64.tar.gz"
-      sha256 "6b3b67457eb50ad6e10b674123c7da715f478f17ea376fb89d2c085f2fc4a2dd"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.1/nwa_Darwin_arm64.tar.gz"
+      sha256 "8d7f4cdb19ddcd185adddd7a30ce33061a28381bd96902cf201c56ad4250969c"
 
       def install
         bin.install "nwa"
@@ -29,15 +29,15 @@ class Nwa < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.0/nwa_Linux_x86_64.tar.gz"
-      sha256 "ab6bc511862590eda81d167bf5ac995ec75a0a3990578c533593a9307628cd22"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.1/nwa_Linux_x86_64.tar.gz"
+      sha256 "32e2676984263d353af46c18f838035faebc82e5bc90f6e3120173bf624b3cd3"
       def install
         bin.install "nwa"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.0/nwa_Linux_arm64.tar.gz"
-      sha256 "431a6f87ad0798814e436f4ea72dd421a1493c18281debf251c32cdefc12193d"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.1/nwa_Linux_arm64.tar.gz"
+      sha256 "69f203507a1b2f4ecc5c6e49a8c0742dd37b1f880ea886a2303733a0227f8f8f"
       def install
         bin.install "nwa"
       end
