@@ -5,21 +5,21 @@
 class Nwa < Formula
   desc "NWA - A More Powerful License Header Management Tool"
   homepage "https://github.com/B1NARY-GR0UP/nwa"
-  version "0.7.5"
+  version "0.7.6"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.5/nwa_Darwin_x86_64.tar.gz"
-      sha256 "00ecabdb8a3297f2a899b9d3d418116c84afd18566dd9b1faf513b69007a0685"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.6/nwa_Darwin_x86_64.tar.gz"
+      sha256 "452a832d550e1dabfdd071f5e180612236a47c0bdb8d4c3c93fe2a24c6acec30"
 
       def install
         bin.install "nwa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.5/nwa_Darwin_arm64.tar.gz"
-      sha256 "6256fb939b7464ae15b02fb60d154cef181e99af80a56602401f338e54a54caf"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.6/nwa_Darwin_arm64.tar.gz"
+      sha256 "7bbae8fbbb7a4070b2b9aea6a8403c060d3b61288279ae3943d9b8288da6d23e"
 
       def install
         bin.install "nwa"
@@ -28,16 +28,16 @@ class Nwa < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.5/nwa_Linux_x86_64.tar.gz"
-      sha256 "4ca7d2980498eca06251d20a0693c90a7e9f4f2c9febbf1c891cdd7710115a0e"
+    if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.6/nwa_Linux_x86_64.tar.gz"
+      sha256 "fe949d89a01bdbe5335b3e16dc71361f6b922abd30dc5ca4e2147e41a8a3be72"
       def install
         bin.install "nwa"
       end
     end
-    if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.5/nwa_Linux_arm64.tar.gz"
-      sha256 "649c6e57e96cb73a7c29294e55284ba9ec3f299984706675a1fdeff4f315dc68"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.6/nwa_Linux_arm64.tar.gz"
+      sha256 "852ec71e0b8348a431bf2bf45fa005d926d68f37d57ee9c2f0cc202ff74ca5f2"
       def install
         bin.install "nwa"
       end
