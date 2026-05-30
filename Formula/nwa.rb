@@ -5,21 +5,21 @@
 class Nwa < Formula
   desc "NWA - A More Powerful License Header Management Tool"
   homepage "https://github.com/B1NARY-GR0UP/nwa"
-  version "0.7.8"
+  version "0.8.0"
   license "Apache-2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.8/nwa_Darwin_x86_64.tar.gz"
-      sha256 "2dff2a39d51b4360b455d7998a737df70327808515facb77c7a32465f7c9f396"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.8.0/nwa_Darwin_x86_64.tar.gz"
+      sha256 "5fac63100bfc35bb87031a1b533038d68ad4a2e24908f43f4bb468db5f501c07"
 
       define_method(:install) do
         bin.install "nwa"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.8/nwa_Darwin_arm64.tar.gz"
-      sha256 "be3eb43a060337863525192fe96ebf138e8b99ed902a8accbf97619cc7b29f54"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.8.0/nwa_Darwin_arm64.tar.gz"
+      sha256 "5fcf50eab931adb8d22c84ac04b174f323f5c136a4def9877fdb6d8a39a74fa3"
 
       define_method(:install) do
         bin.install "nwa"
@@ -29,15 +29,15 @@ class Nwa < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.8/nwa_Linux_x86_64.tar.gz"
-      sha256 "b50d29d4bfb0d4b1a35256fbdd0d54119af520de0305325a5783519449a8dd0f"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.8.0/nwa_Linux_x86_64.tar.gz"
+      sha256 "e87fcca5e83d56651321b75315b73562a32c050efc43c0f2ffd9009db7641702"
       define_method(:install) do
         bin.install "nwa"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.7.8/nwa_Linux_arm64.tar.gz"
-      sha256 "2b8dd65f7ef34b0f5ad7fada778d5a14ab8e4a9fbf6389ea5e9167d012c8502c"
+      url "https://github.com/B1NARY-GR0UP/nwa/releases/download/v0.8.0/nwa_Linux_arm64.tar.gz"
+      sha256 "e9575b0fa0caac83731229c7bbf285b5b030a7a1eec4b8b13315b461a2daf5c9"
       define_method(:install) do
         bin.install "nwa"
       end
